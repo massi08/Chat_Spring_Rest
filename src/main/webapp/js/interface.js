@@ -1,0 +1,1 @@
+!function(a){a(function(){a("#message-form").on("click","button",function(b){b.preventDefault();var c=a("#message-form .input-field input").val();""!=c.trim()&&a("#message-form").length&&(a("#message-form").submit(),setTimeout(function(){a("#message-form")[0].reset()},0))})})}(jQuery);

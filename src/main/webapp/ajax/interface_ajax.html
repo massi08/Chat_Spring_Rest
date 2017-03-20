@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--<link type="text/css" rel="stylesheet" href="/css/materialize.min.css" media="screen,projection"/>-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <link type="text/css" rel="stylesheet" href="/css/style.css"/>
+  <link type="text/css" rel="stylesheet" href="/css/interface.css"/>
+  <title> Connexion </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+</head>
+
+<body>
+<div class="disconnect row">
+  <a class="back-to-salon darken-1 btn waves-effect waves-light blue" id="user-connecte">Page Admin</a>
+  <a id="open-modify-last" class="back-to-salon darken-1 btn waves-effect waves-light blue">Modifier le dernier
+    Message</a>
+  <a id="delete-last" class="back-to-salon darken-1 btn waves-effect waves-light blue">Supprimer le dernier Message</a>
+  <a id="open-add-pseudo" class="back-to-salon darken-1 btn waves-effect waves-light blue">Ajouter un utilisateur</a>
+  <a href="/Deconnexion.jsp"> Déconnexion</a>
+</div>
+
+<div class="chat-frame z-depth-1">
+  <div id="message-wrapper" class="messages-wrapper">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s12 send-message-form">
+    <div class="row valign-wrapper">
+      <div class="input-field col valign">
+        <input type="text" name="usermessage" id="icon_prefix2" class="message-input" autocomplete="off">
+        <label for="icon_prefix2">Message</label>
+      </div>
+      <div class="button-wrapper">
+        <button class="blue darken-1 waves-effect waves-light btn valign" id="send-message">Envoyer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="modify-last-modal" class="modal">
+  <div class="modal-content">
+    <h4>Modification du dernier message</h4>
+    <div class="row">
+      <div class="row modal-form-row">
+        <div class="input-field col s12">
+          <input name="new_message" id="modify-last-input" type="text" class="validate">
+          <label for="modify-last-input">Nouveau Message</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a id="modify-last-close" class="waves-effect waves-blue btn-flat">Annuler</a>
+    <a id="modify-last-modal-submit" class="modal-action waves-effect waves-blue btn-flat">Modifier</a>
+  </div>
+</div>
+
+<div id="add-pseudo-modal" class="modal">
+  <div class="modal-content">
+    <h4>Ajouter un utilisateur</h4>
+    <div class="row">
+      <div class="row modal-form-row">
+        <div class="input-field col s12">
+          <input name="new_message" id="add-pseudo-input" type="text" class="validate">
+          <label for="add-pseudo-input">Pseudo</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a id="add-pseudo-close" class="waves-effect waves-blue btn-flat">Annuler</a>
+    <a id="add-pseudo-modal-submit" class="modal-action waves-effect waves-blue btn-flat">Ajouter</a>
+  </div>
+</div>
+
+<div id="popup-overlay"></div>
+
+<img src="../img/lauren_cohan_5k-1920x1200.jpg" style="width: 100%"/>
+
+<script
+     src="https://code.jquery.com/jquery-2.2.4.min.js"
+     integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+     crossorigin="anonymous"></script>
+<!--<script type="text/javascript" src="/js/jquery-2.1.1.min.js"></script>-->
+<!--<script type="text/javascript" src="/js/materialize.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<script type="text/javascript" src="/js/init.js" async defer></script>
+<script type="text/javascript" src="/js/interface.js" async defer></script>
+<script type="text/javascript" src="/js/ajax/ajax_requests.js"></script>
+</body>
+</html>

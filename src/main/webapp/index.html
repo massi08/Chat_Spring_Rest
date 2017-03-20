@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/style.css"/>
+  <title> Connexion </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+</head>
+
+<body>
+<a href="ajax/login_ajax.html">Ajax login</a>
+<div class="container-full valign-wrapper">
+  <form class="row valign" method="post" action="/init">
+    <h1> Entrez vos informations</h1>
+    <div class="row">
+      <div class="input-field col s6 pseudo-input">
+        <input type="text" name="user_id">
+        <label>Pseudo</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6 pseudo-input">
+        <input type="text" name="salon">
+        <label>Salon</label>
+      </div>
+    </div>
+    <div class="row right-align">
+      <button type="submit" class="blue darken-1 waves-effect waves-light btn">CONNEXION</button>
+    </div>
+  </form>
+</div>
+
+</div>
+<script type="text/javascript" src="/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="/js/materialize.min.js"></script>
+</body>
+</html>
